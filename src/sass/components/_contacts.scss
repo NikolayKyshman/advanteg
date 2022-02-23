@@ -1,201 +1,163 @@
-.contacts {
-  @include font;
-  background-color: #fff5f6;
-  @include desk {
-    background-image: url("../images/contacts-webp/contacts-bg.webp");
-    background-repeat: no-repeat;
-    background-size: common;
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url ("../images/contacts-webp/contacts-bg-2x.webp");
-    }
-  }
+h1,
+h2,
+p {
+  margin: 0;
 }
 
-.contacts__container {
+.about {
   position: relative;
-  top: -84px;
+  background-color: #fff5f6;
+  padding-top: 125px;
+  padding-bottom: 39px;
   @include tab {
-    display: flex;
-    width: 768px;
-    margin: 0 auto;
-    position: relative;
-    top: -78px;
+    padding-top: 130px;
+    padding-bottom: 65px;
   }
   @include desk {
-    width: 100%;
+    padding-top: 125px;
+    padding-bottom: 39px;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  @include tab {
+    max-width: 768px;
+  }
+  @include desk {
     max-width: 1280px;
-    margin: 0 auto;
-    position: relative;
-    top: -102px;
   }
 }
 
-.contacts__card {
-  display: block;
-  margin: 0 auto;
-  background: #ffffff;
-  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-  border-radius: 24px;
+.about__wrap {
+  position: relative;
   width: 220px;
-  padding: 43px 20px;
-  margin-bottom: 20px;
-  @include tab {
-    margin-bottom: 0;
-    padding: 50px 32px;
-    &:not(:last-child) {
-      margin-right: 20px;
-    }
-  }
-  @include desk {
-    width: 330px;
-    padding: 51px 53px 62px 43px;
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
-  }
-}
-
-.contacts__title {
-  @include text(12px, null, 22px, 0.04em);
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  color: #ffffff;
-  background-color: #f0d1a5;
-  border-radius: 4px;
-  width: 80px;
-  height: 16px;
-  margin-top: 0;
-  margin-bottom: 25px;
-  @include tab {
-    width: 73px;
-    height: 28px;
-    @include text(16px, null, 30px, 0.04em);
-  }
-}
-
-.contacts__truck {
-  background-color: #c2e297;
-  width: 130px;
-  @include tab {
-    width: 138px;
-  }
-}
-
-.location__city {
-  @include text(12px, null, 26px, 0.04em);
-  color: #000000;
-  margin-bottom: 10px;
-  @include tab {
-    @include text(14px, null, 26px, 0.04em);
-  }
-  @include desk {
-    @include text(16px, null, 30px, 0.04em);
-  }
-}
-
-.location__text {
-  @include text(12px, null, 23px);
-  color: #907e82;
-  margin-bottom: 25px;
-  @include tab {
-    margin-bottom: 30px;
-    @include text(14px, null, 23px);
-  }
-  @include desk {
-    @include text(16px, null, 29px, 0.04em);
-    margin-bottom: 32px;
-  }
-}
-
-.contacts__location {
-  border-bottom: 1px solid #e1e1e1;
-  margin-bottom: 25px;
-  @include tab {
-    margin-bottom: 30px;
-  }
-  @include desk {
-    margin-bottom: 32px;
-  }
-}
-
-.week__day {
-  @include text(12px, null, 22px);
-  color: #000000;
-  @include tab {
-    @include text(14px, null, 26px);
-  }
-  @include desk {
-    @include text(16px, null, 30px, 0.04em);
-  }
-}
-
-.week__time {
-  @include text(12px, null, 22px);
-  color: #ffa5ba;
-  margin-top: 0;
-  margin-bottom: 25px;
-  &:not(:last-child) {
-    margin-bottom: 10px;
-  }
-  @include tab {
-    @include text(14px, null, 26px);
-    margin-bottom: 30px;
-    &:not(:last-child) {
-      margin-bottom: 16px;
-    }
-  }
-  @include desk {
-    @include text(16px, null, 30px);
-    margin-bottom: 32px;
-    &:not(:last-child) {
-      margin-bottom: 15px;
-    }
-  }
-}
-
-.contacts__week {
-  border-bottom: 1px solid #e1e1e1;
-  margin-bottom: 25px;
-  @include tab {
-    margin-bottom: 30px;
-  }
-  @include desk {
-    margin-bottom: 32px;
-  }
-}
-
-.conection__link {
-  @include text(12px, null, 18px);
-  color: #907e82;
-  &:not(:last-child) {
-    margin-bottom: 5px;
-  }
-  @include tab {
-    @include text(14px, null, 26px);
-  }
-  @include desk {
-    @include text(16px, null, 29px);
-  }
-}
-
-.contacts__btn {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  background-color: #fff;
-  border-radius: 22px;
+  z-index: 2;
   margin: 0 auto;
-  width: 162px;
+  @include tab {
+    padding-left: 357px;
+    padding-top: 100px;
+    width: 100%;
+  }
+  @include desk {
+    padding-left: 587px;
+    margin: 0 auto;
+  }
+}
+
+.image__milk {
+  position: absolute;
+  bottom: 100px;
+  @include tab {
+    bottom: 0px;
+  }
+  @include desk {
+    bottom: -100px;
+  }
+}
+
+.image__cow {
+  margin-bottom: 46px;
+  margin: 0 auto;
+  @include tab {
+    position: absolute;
+    left: 0;
+    top: 70px;
+    height: 340px;
+    width: 340px;
+  }
+  @include desk {
+    position: absolute;
+    left: 0;
+    top: 30px;
+    height: 516px;
+    width: 516px;
+  }
+}
+
+.about__pre--title {
+  @include text(18px, normal, 21px);
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffa5ba;
+  margin-bottom: 15px;
+  @include tab {
+    @include text(26px, normal, 30px);
+    margin-bottom: 16px;
+  }
+  @include desk {
+    @include text(30px, normal, 34px, 0.04em);
+  }
+}
+
+.about__title {
+  @include text(34px, normal, 39px, 0.04em);
+  text-transform: uppercase;
+  color: #d41443;
+  text-align: center;
+  margin-bottom: 26px;
+  @include tab {
+    @include text(48px, normal, 55px, 0.04em);
+    margin-bottom: 0;
+  }
+  @include desk {
+    @include text(58px, normal, 66px, 0.06em);
+  }
+}
+
+.about__text--top {
+  font-family: DM Sans sans-serif;
+  @include text(12px, null, 19px);
+  color: #000000;
+  margin: 46px 15px 40px 15px;
+  @include tab {
+    @include text(14px, null, 25px);
+    margin: 0 0 35px 0;
+  }
+  @include desk {
+    @include text(16px, normal, 28px, 0.04em);
+  }
+}
+
+.about__text--bottom,
+.about__text--down {
+  font-family: DM Sans sans-serif;
+  @include text(12px, null, 19px);
+  color: #907e82;
+  margin-left: 15px;
+  margin-right: 15px;
+  @include tab {
+    @include text(14px, null, 25px);
+    margin-left: 0;
+    margin-right: 0;
+  }
+  @include desk {
+    @include text(14px, null, 27px, 0.04em);
+  }
+}
+
+.about__text--down {
+  margin: 10px 15px 17px 15px;
+  @include tab {
+    margin: 20px 0 45px 0;
+  }
+}
+
+.about__button {
+  background-color: #ffffff;
+  border-radius: 22px;
+  margin-left: 15px;
+  font-family: DM Sans;
+  @include text(14px, bold, 18px);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #d41443;
+  width: 176px;
   height: 44px;
-  margin-bottom: 10px;
-  padding-left: 16px;
-  padding-right: 17px;
   @include animation;
   &:hover,
   &:focus {
@@ -205,70 +167,8 @@
   &:focus span {
     color: #fff;
   }
-  &:hover .contacts__btn--icons,
-  &:focus .contacts__btn--icons {
-    fill: #ffffff;
-  }
   @include tab {
+    @include text(16px, bold, 21px);
     margin: 0;
-    padding: 0;
-    margin-right: 15px;
-    width: 192px;
   }
-  @include desk {
-    width: 198px;
-  }
-}
-
-.contacts__franchise {
-  @include tab {
-    width: 175px;
-  }
-  @include desk {
-    width: 180px;
-  }
-}
-
-.contacts__btn--wrap {
-  margin-top: 54px;
-  position: relative;
-  top: -84px;
-  @include tab {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    margin-top: 81px;
-    top: -78px;
-  }
-  @include desk {
-    margin-top: 86px;
-    top: -102px;
-  }
-}
-
-.contacts__btn--text {
-  @include text(16px, bold, 21px);
-  color: #d41443;
-  margin-right: 8px;
-  @include tab {
-    margin-right: 14px;
-  }
-}
-
-.contacts__btn--icons {
-  width: 8px;
-  height: 8px;
-  margin-top: 3px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  @include desk {
-    margin-top: 2px;
-  }
-}
-
-.contacts__btn:hover .contacts__btn--icons,
-.contacts__btn:focus .contacts__btn--icons {
-  fill: #ffffff;
 }

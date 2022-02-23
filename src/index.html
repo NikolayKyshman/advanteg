@@ -29,94 +29,58 @@
     ></script> -->
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <!-- <script src="./index.js"></script> -->
-    <section class="contacts">
-      <h2 class="visually-hidden">contacts</h2>
-          <div class="container contacts__container">
-              <div class="contacts__card">
-                  <p class="contacts__title">CAFE</p>
-                      <div class="contacts__location location">
-                          <div class="location__city">Chicago</div>
-                          <p class="location__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
-                      </div>
-                      <div class="contacts__week week">
-                          <div class="week__day">Monday - Friday</div>
-                          <p class="week__time">06:00 AM - 10:00 PM</p>
-                          <div class="week__day">Saturday - Sunday</div>
-                          <p class="week__time">08:00 AM - 16:00 PM</p>
-                      </div>
-                      <div class="contacts__conection conection">
-                          <ul class="conection__list">
-                              <li class="conection__link">
-                                  <a class="conection__nav conection__tel" href="tel:+61(0)383766284">+61(0) 383 766 284</a>
-                              </li>
-                              <li class="conection__link">
-                                  <a class="conection__nav conection__mail" href="mailto:noreply@envato.com">noreply@envato.com</a>
-                              </li>
-                          </ul>
-                      </div>
-                  </div>
-  
-                  <div class="contacts__card">
-                      <p class="contacts__title contacts__truck">FOODTRUCK</p>
-                          <div class="contacts__location location">
-                              <div class="location__city">Los Angeles</div>
-                              <p class="location__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
-                          </div>
-                          <div class="contacts__week week">
-                              <div class="week__day">Monday - Friday</div>
-                              <p class="week__time">06:00 AM - 10:00 PM</p>
-                              <div class="week__day">Saturday - Sunday</div>
-                              <p class="week__time">08:00 AM - 16:00 PM</p>
-                          </div>
-                          <div class="contacts__conection conection">
-                              <ul class="conection__list">
-                                  <li class="conection__link">
-                                      <a class="conection__nav conection__tel" href="tel:+61(0)383766284">+61(0) 383 766 284</a>
-                                  </li>
-                                  <li class="conection__link">
-                                      <a class="conection__nav conection__mail" href="mailto:noreply@envato.com">noreply@envato.com</a>
-                                  </li>
-                              </ul>
-                          </div>
-                  </div>
-  
-                  <div class="contacts__card">
-                      <p class="contacts__title">CAFE</p>
-                          <div class="contacts__location location">
-                              <div class="location__city">New York</div>
-                                  <p class="location__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
-                          </div>
-                          <div class="contacts__week week">
-                              <div class="week__day">Monday - Friday</div>
-                                  <p class="week__time">06:00 AM - 10:00 PM</p>
-                              <div class="week__day">Saturday - Sunday</div>
-                          <p class="week__time">08:00 AM - 16:00 PM</p>
-                          </div>
-                          <div class="contacts__conection conection">
-                              <ul class="conection__list">
-                                  <li class="conection__link">
-                                      <a class="conection__nav conection__tel" href="tel:+61(0)383766284">+61(0) 383 766 284</a>
-                                  </li>
-                                  <li class="conection__link">
-                                      <a class="conection__nav conection__mail" href="mailto:noreply@envato.com">noreply@envato.com</a>
-                                  </li>
-                              </ul>
-                          </div>
-                    </div>
-          </div>
-  
-          <div class="contacts__btn--wrap"> 
-              <button type="button" class="contacts__btn"><span class="contacts__btn--text">Our Locations</span>
-                  <svg class="contacts__btn--icons" width="4" height="8">
-                      <use href="./images/svg/sprite.svg#icon-arrow-right-button"></use>
-                  </svg>
-              </button>
-              <button type="button" class="contacts__btn contacts__franchise"><span class="contacts__btn--text">Franchise</span>
-                  <svg class="contacts__btn--icons" width="4" height="8">
-                      <use href="./images/svg/sprite.svg#icon-arrow-right-button"></use>
-                  </svg>
-              </button>
-          </div>   
-  </section>
-  </body>
+    <section class="about">
+        <picture>
+            <source srcset="./images/about/desktop-about-bg.png 1x, 
+                            ./images/about/desktop-about-bg-2x.png 2x" 
+                            media="(min-width: 1280px)"/>
+            <source srcset="./images/about/desktop-about-bg.png 1x, 
+                            ./images/about/desktop-about-bg-2x.png 2x" 
+                            media="(min-width: 768px)"/>
+            <source srcset="./images/about/mobile-about-bg.png 1x,
+                            ./images/about/mobile-about-bg-2x.png 2x"
+                            media="(min-width: 480px)"/>
+                    <img src="./images/about/desktop-about-bg.png" alt="bg" class="image__milk">
+        </picture>
+        <div class="container">
+            <div class="about__name">
+                <p class="about__pre--title">tradition and love</p>
+                <h2 class="about__title">how it’s made?</h2>
+            </div>
+    
+            <div class="about__wrap">
+                <picture>
+                    <source srcset="./images/about/desktop-cow.png 1x,
+                                    ./images/about/desktop-cow-2x.png 2x" 
+                                    media="(min-width: 1280px)">
+                    <source srcset="./images/about/tablet-cow.png 1x,
+                                    ./images/about/tablet-cow-2x.png 2x" 
+                                    media="(min-width: 768px)">
+                    <source srcset="./images/about/mobile-cow.png 1x,
+                                    ./images/about/mobile-cow-2x.png 2x" 
+                                    media="(min-width: 320px)">
+                    <img src="./images/about/tablet-cow.png" width="270" height="260" alt="cow" class="image__cow">
+                </picture>
+    
+                <p class="about__text--top">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus,
+                    faucibus
+                    lorem eget, egestas eros.
+                    Maecenas eleifend erat at justo fringilla.</p>
+                <p class="about__text--bottom">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris
+                    rhoncus
+                    orci in imperdiet placerat.
+                    Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
+                </p>
+                <p class="about__text--down">Aliquam erat volutpat. Aenean accumsan.</p>
+    
+                <button class="about__button" type="button">
+                        <span>Read more</span>
+                    <svg class="button-svg" width="4" height="8">
+                        <use src="./images/svg/sprite.svg##icon-arrow-right-button"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+    </body>
 </html>
