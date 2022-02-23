@@ -333,12 +333,7 @@ p {
 }
 
 .about__button:hover, .about__button:focus {
-  background-color: #d41342;
-}
-
-.about__button:hover span,
-.about__button:focus span {
-  color: #fff;
+  background-color: #ecebeb;
 }
 
 @media screen and (min-width: 768px) {
@@ -355,10 +350,5 @@ p {
   width: 8px;
   height: 8px;
   fill: #d41342;
-}
-
-.about__button:hover .button-svg,
-.about__button:focus .button-svg {
-  fill: #ffffff;
 }
 /*# sourceMappingURL=main.css.map */

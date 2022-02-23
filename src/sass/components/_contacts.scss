@@ -161,11 +161,7 @@ p {
   @include animation;
   &:hover,
   &:focus {
-    background-color: #d41342;
-  }
-  &:hover span,
-  &:focus span {
-    color: #fff;
+    background-color: #ecebeb;
   }
   @include tab {
     @include text(16px, bold, 21px);
@@ -177,9 +173,4 @@ p {
   width: 8px;
   height: 8px;
   fill: #d41342;
-}
-
-.about__button:hover .button-svg,
-.about__button:focus .button-svg {
-  fill: #ffffff;
 }
